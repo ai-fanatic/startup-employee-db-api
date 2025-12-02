@@ -1,0 +1,60 @@
+{
+  "company": "TechFlow AI",
+  "founded": 2023,
+  "employees": [
+    {
+      "id": "EMP-001",
+      "name": "Sarah Chen",
+      "role": "CEO & Co-Founder",
+      "department": "Executive",
+      "email": "sarah.c@techflow.ai",
+      "reportsTo": null,
+      "tags": ["founder", "board_member"]
+    },
+    {
+      "id": "EMP-002",
+      "name": "Marcus Rodriguez",
+      "role": "CTO & Co-Founder",
+      "department": "Engineering",
+      "email": "marcus.r@techflow.ai",
+      "reportsTo": "EMP-001",
+      "tags": ["founder", "technical_lead"]
+    },
+    {
+      "id": "EMP-003",
+      "name": "Emily Zhang",
+      "role": "Lead Product Designer",
+      "department": "Product",
+      "email": "emily.z@techflow.ai",
+      "reportsTo": "EMP-001",
+      "tags": ["design_system", "ux"]
+    },
+    {
+      "id": "EMP-004",
+      "name": "David Okafor",
+      "role": "Senior Backend Engineer",
+      "department": "Engineering",
+      "email": "david.o@techflow.ai",
+      "reportsTo": "EMP-002",
+      "tags": ["infrastructure", "api_architect"]
+    },
+    {
+      "id": "EMP-005",
+      "name": "Jessica Alverez",
+      "role": "Sales Development Rep",
+      "department": "Sales",
+      "email": "jessica.a@techflow.ai",
+      "reportsTo": "EMP-001",
+      "tags": ["outbound", "crm_lead"]
+    },
+    {
+      "id": "EMP-006",
+      "name": "Ajay Patel",
+      "role": "Frontend Intern",
+      "department": "Engineering",
+      "email": "ajay.p@techflow.ai",
+      "reportsTo": "EMP-004",
+      "tags": ["react", "intern"]
+    }
+  ]
+}
