@@ -4,7 +4,7 @@ info:
   description: A public read-only API for the TechFlow AI startup employee directory.
   version: 1.0.0
 servers:
-  - url: https://{username}.github.io/{repository}
+  - url: https://ai-fanatic.github.io/startup-employee-db-api
     description: GitHub Pages Host
 paths:
   /db.json:
