@@ -1,0 +1,62 @@
+openapi: 3.0.0
+info:
+  title: TechFlow AI Employee Database
+  description: A public read-only API for the TechFlow AI startup employee directory.
+  version: 1.0.0
+servers:
+  - url: https://{username}.github.io/{repository}
+    description: GitHub Pages Host
+paths:
+  /db.json:
+    get:
+      summary: Get all employees
+      description: Returns the full list of employees and company metadata.
+      operationId: getEmployees
+      responses:
+        '200':
+          description: Successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Database'
+components:
+  schemas:
+    Database:
+      type: object
+      properties:
+        company:
+          type: string
+          example: TechFlow AI
+        founded:
+          type: integer
+          example: 2023
+        employees:
+          type: array
+          items:
+            $ref: '#/components/schemas/Employee'
+    Employee:
+      type: object
+      properties:
+        id:
+          type: string
+          example: EMP-001
+        name:
+          type: string
+          example: Sarah Chen
+        role:
+          type: string
+          example: CEO & Co-Founder
+        department:
+          type: string
+          example: Executive
+        email:
+          type: string
+          format: email
+        reportsTo:
+          type: string
+          nullable: true
+          description: ID of the manager this employee reports to.
+        tags:
+          type: array
+          items:
+            type: string
